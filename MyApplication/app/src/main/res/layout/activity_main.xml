@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/hello"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/img"/>
+
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/first"
+            />
+
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/second"
+            />
+
+        <Button
+            android:id="@+id/fourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/click"
+            android:layout_margin="10dp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ck1"
+            android:text="Destroy the world"
+            android:textSize="28dp"
+            android:layout_below="@+id/third"
+            android:layout_toRightOf="@+id/img"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio 1"
+            android:id="@+id/rd1"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
